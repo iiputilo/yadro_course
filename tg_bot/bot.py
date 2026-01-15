@@ -20,7 +20,7 @@ DB_UPDATE_POST_TIMEOUT_SEC = int(os.getenv("DB_UPDATE_POST_TIMEOUT_SEC", "60"))
 DB_UPDATE_WAIT_TIMEOUT_SEC = int(os.getenv("DB_UPDATE_WAIT_TIMEOUT_SEC", "300"))
 DB_UPDATE_POLL_INTERVAL_SEC = float(os.getenv("DB_UPDATE_POLL_INTERVAL_SEC", "2"))
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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").strip()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-5").strip()
 OPENROUTER_API_URL = os.getenv("OPENROUTER_API_URL", "https://openrouter.ai/api/v1/chat/completions").strip()
 
@@ -345,3 +345,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
